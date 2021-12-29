@@ -1,26 +1,18 @@
 body {
   text-align: center;
-  background-color: #283149;
+  background-color: #1e4357;
 }
 
 h1 {
   font-size: 5rem;
-  color: #dbedf3;
-  font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #da0463;
+  color: #f7f1e2;
+  font-family: "Garamond", cursive;
+  text-shadow: 3px 0 #df7c2e;
 }
 
 footer {
   color: #dbedf3;
   font-family: sans-serif;
-}
-
-.w {
-  background-image: url(images/tom1.png);
-}
-
-.a {
-  background-image: url(images/tom2.png);
 }
 
 .s {
@@ -29,10 +21,6 @@ footer {
 
 .d {
   background-image: url(images/tom4.png);
-}
-
-.j {
-  background-image: url(images/snare.png);
 }
 
 .k {
@@ -53,28 +41,53 @@ footer {
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #dbedf3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
+  animation: drums 0.1s ease 3;
+  opacity: 0.8;
 }
 
 .drum {
-  outline: none;
-  border: 10px solid #404b69;
-  font-size: 5rem;
-  font-family: "Arvo", cursive;
-  line-height: 2;
+  /* outline: none; */
+  /* border: 10px solid #404b69; */
+  font-size: 3rem;
+  color: #f7f1e2;
+  font-family: "Garamond", cursive;
+  text-shadow: 3px 0 #df7c2e;
   font-weight: 900;
-  color: #da0463;
-  text-shadow: 3px 0 #dbedf3;
-  border-radius: 15px;
+
+  border: none;
   display: inline-block;
   width: 150px;
   height: 150px;
   text-align: center;
+  line-height: 2;
   margin: 10px;
-  background-color: white;
+  background-color: #1e4357;
+  padding-bottom: -10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.j {
+  background-image: url(images/snare.png);
+  padding-top: 4%;
+}
+.w {
+  background-image: url(images/tom1.png);
+  padding-top: 3.5%;
+}
+
+.a {
+  background-image: url(images/tom2.png);
+  padding-top: 3%;
+}
+@keyframes drums {
+  0%,
+  100% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
 }
